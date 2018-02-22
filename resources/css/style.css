@@ -70,6 +70,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .logo {
@@ -104,11 +105,17 @@ nav ul {
   margin-right: 24px;
 }
 
+
 ul li a {
   margin-left: 16px;
   font-size: 1rem;
   text-decoration: none;
-  color: #1B202B;
+  color: black;
+  transition: color 0.3s linear 0s;
+}
+
+ul li a:hover {
+  color: lightgray;
 }
 
 .mobile-nav {
@@ -117,8 +124,116 @@ ul li a {
 
 /* Start Here Section */
 
+section.jumbotron {
+  top: 64px;
+  background-color: lightgray;
+}
+
+.jumbotron-img {
+  width: 60%;
+  height: auto;
+  margin: 32px 40px 32px 24px;
+}
+
+.jumbotron-img img {
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  max-width: 400px;
+}
+
+.jumbotron-content a {
+  background-color: gray;
+  width: 100%;
+  margin-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  transition: all 0.3s linear 0ms;
+}
+
+.jumbotron-content a:hover {
+  background-color: lightgray;
+  color: gray;
+}
 
 /* Keep Practicing Section */
+
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 32px 24px;
+}
+
+.left img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px
+}
+
+.left h5 {
+  margin-bottom: 24px;
+}
+
+.left span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 30px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgray;
+  padding-bottom: 32px;
+  width: 40%;
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.box img {
+  width: 35%;
+  margin: 16px 16px 16px 16px;
+}
+
+.right-mobile {
+  display: none;
+}
+
+.box-content {
+  margin-right: 16px
+}
+
+.box-content p {
+  margin-bottom: 1.25rem;
+}
+
+.box-content a {
+  color: grey;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.box-content a:hover {
+  color: lightgray;
+}
+
 
 
 /* Thesis Section */
