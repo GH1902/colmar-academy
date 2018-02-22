@@ -6,6 +6,125 @@
   display: none;
 }
 
+/* Garry Hope Colmar Academy Project */
+
+/* Colour Palette = http://paletton.com/#uid=23k0u0k6+KE02+H2aVEdsw3kNpy*/
+
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+h1  {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 400;
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font-weight: 700;
+  color: #000;
+  font-size: 2rem;
+}
+
+h6 {
+  font-weight: 400;
+  color: #000;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #000;
+
+}
+
+/* header section */
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.logo span {
+  font-size: 18px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 27px;
+}
+
+#colmar {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+}
+
+#academy {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: lightgray;
+}
+
+nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+}
+
+ul li a {
+  margin-left: 16px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1B202B;
+}
+
 .mobile-nav {
   display: none;
 }
+
+/* Start Here Section */
+
+
+/* Keep Practicing Section */
+
+
+/* Thesis Section */
+
+
+/* Footer Section Section */
+
+
+/* Media Queries */

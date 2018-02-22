@@ -11,53 +11,57 @@
     <!-- Header -->
 
     <header>
-      <div class="logo">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"/>
-        <span class="colmar">Colmar</span><span class="academy">Academy</span>
-      </div>
-      <div class="desktop-nav">
-        <span><a href="#campus">On campus</a></span>
-        <span><a href="#online">Online</a></span>
-        <span><a href="#companies">For companies</a></span>
-        <span><a href="#signin">Sign in</a></span>
-      </div>
-      <div class="mobile-nav">
-        <span><a href="#campus"><img src=".resources/images/ic-on-campus.svg" alt="Colmar Academy Logo"/></a></span>
-        <span><a href="#online"><img src=".resources/images/ic-online.svg" alt="Colmar Academy Logo"/></a></span>
-        <span><a href="#signin"><img src=".resources/images/ic-login.svg" alt="Colmar Academy Logo"/></a></span>
-      </div>
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo"/>
+          <span id="colmar">COLMAR</span><span id="academy">ACADEMY</span>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#campus">On campus</a></li>
+            <li><a href="#online">Online</a></li>
+            <li><a href="#companies">For companies</a></li>
+            <li><a href="#signin">Sign in</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-nav">
+          <ul>
+           <li><a href="#campus"><img src="./resources/images/ic-on-campus.svg" alt="Colmar Academy Logo"/></a></li>
+           <li><a href="#online"><img src="./resources/images/ic-online.svg" alt="Colmar Academy Logo"/></a></li>
+           <li><a href="#signin"><img src="./resources/images/ic-login.svg" alt="Colmar Academy Logo"/></a></li>
+         </ul>
+        </nav>
     </header>
 
 
     <!-- Start Here -->
 
-    <div class="container">
-      <div class="main-article">
-        <div class="left-section">
+    <section class="main-article">
+      <div class="container">
+        <div class="left">
           <img src="./resources/images/banner.jpg" alt="students studing outside"/>
         </div>
-        <div class="right-section ">
+        <div class="rightsection">
           <div class="content">
             <h1>Learn something new everyday</h1>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
             <a href="#" target="_blank">Start Here</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Keep Practicing -->
 
-    <div class="practice container">
+    <section id="practice" class="container">
 
-      <div class="left-section">
+      <div class="left">
         <img src="./resources/images/information-main.jpg" alt="Studying Student"/>
-        <h2>It doesn't hurt to keep practicing</h2>
+        <h5>It doesn't hurt to keep practicing</h5>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <span class="sign-off">Emmanual, Sr Stratagist at Hiring.com</span>
       </div>
 
-      <div class="right-section">
+      <div class="right">
         <div class="orientation box">
           <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Student Reading"/>
           <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="picture of student on campus"/>
@@ -87,13 +91,13 @@
         </div>
       </div>
 
-    </div>
+    </section>
 
     <!-- Start Learning -->
 
-    <div class="learning container">
+    <section class="learning container">
       <div class="courses-desktop">
-        <h2>Start Learning</h2>
+        <h5>Start Learning</h5>
         <div class="course">
           <div class="course-img">
             <img src="./resources/images/course-software.jpg" alt="Software engineering"/>
@@ -156,34 +160,33 @@
         </div>
       </div>
 
-      <div class="courses-mobile">
-        <a href="#">Softweer Enginering</a>
-        <a href="#">Computer Art</a>
-        <a href="#">Design</a>
-        <a href="#">Data</a>
-        <a href="#">Business</a>
-        <a href="#">Marketing</a>
-      </div>
+        <div class="courses-mobile">
+          <h6>Software engineering</h6>
+          <h6>Computer art</h6>
+          <h6>Design</h6>
+          <h6>Data</h6>
+          <h6>Business</h6>
+          <h6>Marketing</h6>
+        </div>
 
-    </div>
+      </div>
+    </section>
 
     <!-- Thesis Exhibit -->
 
-    <div class="thesis container">
-      <h2>Thesis Exhibit</h2>
+    <section class="thesis container">
+      <h5>Thesis Exhibit</h5>
       <div class="left-section">
         <video autoplay muted loop>
           <source src="./resources/videos/thesis.mp4" type="video/mp4">
         </video>
         <h6>Reimagine urban</h6>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        <span class="sign-off">Emmanual, Sr Stratagist at Hiring.com</span>
       </div>
 
       <div class="right-section">
         <div class="prototype box">
-          <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Student"/>
-          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="picture of student on campus"/>
+          <img class="desktop" src="./resources/images/thesis-fisma.jpg" alt="Fisma"/>
           <div class="content">
             <h6>Fisma: Design and Prototype</h6>
             <p>Designer showcase of new prototype product</p>
@@ -191,8 +194,7 @@
           </div>
         </div>
         <div class="research box">
-          <img class="desktop" src="./resources/images/information-campus.jpg" alt="Inside a classroom"/>
-          <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="picture of student in classroom"/>
+          <img class="desktop" src="./resources/images/thesis-now-and-then.jpg" alt="New York"/>
           <div class="content">
             <h6>Now and then</h6>
             <p>Research study about New York</p>
@@ -200,17 +202,18 @@
           </div>
         </div>
       </div>
+    </section>
 
     <!-- Footer -->
 
     <footer>
-      <div class="container">
-        <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-        <nav class="footer-nav">
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-        </nav>
-      </div>
+      <span>&copy;2016 Colmar Academy. All rights reserved.</span>
+      <nav>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
     </footer>
 
   </body>
