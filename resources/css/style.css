@@ -193,7 +193,7 @@ section.jumbotron {
   margin-top: 30px;
 }
 
-.right {
+.right-desktop {
   display: flex;
   flex-direction: column;
   border-left: 1px solid lightgray;
@@ -210,10 +210,6 @@ section.jumbotron {
 .box img {
   width: 35%;
   margin: 16px 16px 16px 16px;
-}
-
-.right-mobile {
-  display: none;
 }
 
 .box-content {
@@ -234,7 +230,64 @@ section.jumbotron {
   color: lightgray;
 }
 
+.right-mobile {
+  display: none;
+}
 
+/* Start Learning Section */
+
+.start-learning {
+  display: block;
+  background-color: lightgray;
+}
+
+.start-learning h5 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 64px 32px 64px;
+
+}
+
+.course {
+  width: 260px;
+  background-color: white;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.course .box-content {
+  width: 225px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.course .box-content span {
+  font-weight: 200;
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.courses-mobile {
+  display: none;
+}
 
 /* Thesis Section */
 
