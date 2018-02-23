@@ -278,6 +278,44 @@ section.jumbotron {
   display: none;
 }
 
+/* Keep Practicing Section - MOBILE */
+
+@media only screen and (max-width: 768px) {
+  .practice {
+    justify-content: center;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .right-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .box img {
+    width: 90%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .box-content {
+    width: 90%;
+    margin: 16px 16px 16px 32px;
+  }
+}
+
 /* Start Learning Section */
 
 .start-learning {
@@ -334,41 +372,6 @@ section.jumbotron {
 
 /* Start Learning Section - MOBILE */
 
-@media only screen and (max-width: 768px) {
-  .practice {
-    justify-content: center;
-  }
-
-  .left {
-    display: none;
-  }
-
-  .right {
-    display: none;
-  }
-
-  .right-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
-
-  .box img {
-    width: 90%;
-    max-width: 480px;
-    height: auto;
-  }
-
-  .box-content {
-    width: 90%;
-    margin: 16px 16px 16px 32px;
-  }
-}
 
 /* Thesis Section */
 
@@ -409,6 +412,9 @@ video {
 .video-mobile {
   display: none;
 }
+
+/* Thesis Section - MOBILE */
+
 
 /* Footer Section Section */
 
