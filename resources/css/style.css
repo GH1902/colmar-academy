@@ -8,6 +8,7 @@
 
 /* Garry Hope Colmar Academy Project */
 
+
 /* Colour Palette = http://paletton.com/#uid=23k0u0k6+KE02+H2aVEdsw3kNpy*/
 
 
@@ -193,7 +194,7 @@ section.jumbotron {
   margin-top: 30px;
 }
 
-.right-desktop {
+.right {
   display: flex;
   flex-direction: column;
   border-left: 1px solid lightgray;
@@ -291,8 +292,64 @@ section.jumbotron {
 
 /* Thesis Section */
 
+.thesis {
+  display: block;
+}
+
+.thesis h5 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding bottom: 32px;
+}
+
+.thesis-content {
+  display: inline-flex;
+}
+
+.video {
+  margin-right: 16px;
+}
+
+video {
+  margin-bottom: 24px;
+  border: 2px solid lightgray;
+}
+
+#thesis {
+  border-left: none;
+  margin-top: 32px;
+}
+
+#thesis div:first-child{
+  background-color: lightgray;
+  padding-top: 0px;
+}
+
+.video-mobile {
+  display: none;
+}
 
 /* Footer Section Section */
 
+footer {
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid lightgray;
+}
+
+footer span {
+  margin-left: 24px;
+  font-size: 0.75rem;
+  color: gray;
+}
+
+footer nav ul li a {
+  font-size: 0.75rem;
+  color: gray;
+}
 
 /* Media Queries */
