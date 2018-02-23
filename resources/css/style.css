@@ -372,6 +372,38 @@ section.jumbotron {
 
 /* Start Learning Section - MOBILE */
 
+@media only screen and (max-width: 768px) {
+  section.start-learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    background-color: gray;
+  }
+
+  .start-learning h5 {
+    padding-bottom: 32px;
+  }
+
+  .course-container {
+    display: none;
+  }
+
+  .courses-mobile {
+    display: block;
+    justify-content: center;
+    width: 90%;
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+
+  .courses-mobile h6 {
+    background-color: lightgray;
+    padding: 16px 0px 16px 16px;
+    margin-bottom: 8px;
+  }
+
+}
 
 /* Thesis Section */
 
