@@ -1,7 +1,3 @@
-.courses-mobile {
-  display: none;
-}
-
 /* Garry Hope Colmar Academy Project */
 
 
@@ -16,6 +12,10 @@ html {
 
 body {
   font-family: Helvetica, sans-serif;
+}
+
+body section:nth-child(even) {
+  background-color: lightgray;
 }
 
 section {
@@ -134,7 +134,7 @@ ul li a:hover {
 
 /* Start Here Section */
 
-section.jumbotron {
+.jumbotron {
   top: 64px;
   background-color: lightgray;
 }
@@ -177,6 +177,32 @@ section.jumbotron {
   color: gray;
 }
 
+/* Start Here Section - TABLET */
+
+@media only screen and (max-width: 1024px) {
+  .jumbotron-img {
+    width: 50%;
+    margin-left: 16px;
+  }
+
+  .jumbotron-content h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    width: 90%;
+  }
+
+  .jumbotron-content h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .jumbotron-content a {
+    width: 90%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
 /* Start Here Section - MOBILE */
 
 @media only screen and (max-width: 768px) {
@@ -193,7 +219,7 @@ section.jumbotron {
     background-size: cover;
     width: 100%;
     height: 180px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
   }
 
   .jumbotron-img img {
@@ -205,7 +231,7 @@ section.jumbotron {
     text-align: center;
   }
 
-  .jumbotron-content a, .jumbotron-content h1, .jumbotron-content h2 {
+  .jumbotron-content h1, .jumbotron-content h2, .jumbotron-content a {
     width: 100%;
     margin-right: 0px;
   }
@@ -233,8 +259,8 @@ section.jumbotron {
 .left span {
   font-size: 0.9rem;
   font-weight: 600;
-  color: black;
   margin-top: 30px;
+  color: black;
 }
 
 .right {
@@ -243,6 +269,10 @@ section.jumbotron {
   border-left: 1px solid lightgray;
   padding-bottom: 32px;
   width: 40%;
+}
+
+.right div:nth-child(3n+0) {
+  background-color: lightgray;
 }
 
 .box {
@@ -276,6 +306,19 @@ section.jumbotron {
 
 .right-mobile {
   display: none;
+}
+
+/* Keep Practicing Section - TABLET */
+
+@media only screen and (max-width: 1024px) {
+  .left {
+    width: 50%;
+    margin-left: 16px
+  }
+
+  .right {
+    width: 50%;
+  }
 }
 
 /* Keep Practicing Section - MOBILE */
@@ -370,15 +413,32 @@ section.jumbotron {
   display: none;
 }
 
+/* Start Learning Section - TABLET */
+
+@media only screen and (max-width: 1024px) {
+  .start-learning {
+    padding-left: 16px;
+  }
+
+  .course-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .course {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
 /* Start Learning Section - MOBILE */
 
 @media only screen and (max-width: 768px) {
-  section.start-learning {
+  .start-learning {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0px;
-    background-color: gray;
   }
 
   .start-learning h5 {
@@ -398,11 +458,11 @@ section.jumbotron {
   }
 
   .courses-mobile h6 {
-    background-color: lightgray;
+    background-color: gray;
+    color: white;
     padding: 16px 0px 16px 16px;
     margin-bottom: 8px;
   }
-
 }
 
 /* Thesis Section */
@@ -445,8 +505,22 @@ video {
   display: none;
 }
 
+/* Thesis Section - TABLET */
+
+@media only screen and (max-width: 1024px) {
+  .thesis h5 {
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+}
+
 /* Thesis Section - MOBILE */
 
+@media only screen and (max-width: 768px) {
+  .video-mobile {
+    display: block;
+  }
+}
 
 /* Footer Section Section */
 
@@ -470,4 +544,17 @@ footer nav ul li a {
   color: gray;
 }
 
-/* Media Queries */
+/* Footer Section Section - MOBILE */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  footer {
+    border-top: 0px solid lightgray;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
