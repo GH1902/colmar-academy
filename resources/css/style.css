@@ -61,7 +61,6 @@ p {
   font-size: 0.9rem;
   line-height: 1rem;
   color: #000;
-
 }
 
 /* header section */
@@ -123,6 +122,20 @@ ul li a:hover {
   display: none;
 }
 
+/* header section - MOBILE */
+
+@media only screen and (max-width: 768px) {
+  .logo, .desktop-nav {
+    display: none;
+  }
+
+  nav.mobile-nav, nav.mobile-nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
 /* Start Here Section */
 
 section.jumbotron {
@@ -166,6 +179,40 @@ section.jumbotron {
 .jumbotron-content a:hover {
   background-color: lightgray;
   color: gray;
+}
+
+/* Start Here Section - MOBILE */
+
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .jumbotron-img {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .jumbotron-img img {
+    display: none;
+  }
+
+  .jumbotron-content {
+    margin: 32px 16px 32px 16px;
+    text-align: center;
+  }
+
+  .jumbotron-content a, .jumbotron-content h1, .jumbotron-content h2 {
+    width: 100%;
+    margin-right: 0px;
+  }
 }
 
 /* Keep Practicing Section */
@@ -253,7 +300,6 @@ section.jumbotron {
   flex-wrap: wrap;
   justify-content: center;
   padding: 32px 64px 32px 64px;
-
 }
 
 .course {
