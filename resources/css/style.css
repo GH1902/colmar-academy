@@ -3,6 +3,12 @@
 
 /* Colour Palette = http://paletton.com/#uid=23k0u0k6+KE02+H2aVEdsw3kNpy*/
 
+/* Styles:
+
+Border solid 1px
+Border-radius 4px
+
+*/
 
 /* Universal Styles */
 
@@ -14,13 +20,18 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-body section:nth-child(even) {
-  background-color: lightgray;
-}
-
 section {
   width: 100%;
   display: flex;
+}
+
+#header-offset {
+  position: absolute;
+  top: 64px;
+}
+
+#header-offset section:nth-child(odd) {
+  background-color: lightgray;
 }
 
 h1  {
@@ -63,10 +74,14 @@ p {
 
 header {
   height: 64px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 100;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid lightgrey;
 }
 
 .logo {
@@ -101,7 +116,6 @@ nav ul {
   margin-right: 24px;
 }
 
-
 ul li a {
   margin-left: 16px;
   font-size: 1rem;
@@ -135,8 +149,6 @@ ul li a:hover {
 /* Start Here Section */
 
 .jumbotron {
-  top: 64px;
-  background-color: lightgray;
 }
 
 .jumbotron-img {
@@ -156,10 +168,13 @@ ul li a:hover {
   justify-content: center;
   align-items: left;
   max-width: 400px;
+  padding: 32px;
 }
 
 .jumbotron-content a {
   background-color: gray;
+  border: 1px solid gray;
+  border-radius: 4px;
   width: 100%;
   margin-right: 16px;
   text-align: center;
@@ -295,13 +310,19 @@ ul li a:hover {
 }
 
 .box-content a {
-  color: grey;
+  color: white;
   font-size: 0.9rem;
   text-decoration: none;
+  background-color: grey;
+  padding: 8px 8px 8px 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  transition: all 0.4s linear 0s;
 }
 
 .box-content a:hover {
-  color: lightgray;
+  color: grey;
+  background-color: lightgrey;
 }
 
 .right-mobile {
@@ -384,7 +405,14 @@ ul li a:hover {
   background-color: white;
   margin-right: 32px;
   margin-bottom: 16px;
+  transition: transform 0.25s ease-out 0s;
+  border: 1px solid lightgray;
+  border-radius: 8px;
 }
+
+.course:hover {
+    transform: scale(1.2);
+  }
 
 .course img {
   width: 100%;
@@ -459,6 +487,8 @@ ul li a:hover {
 
   .courses-mobile h6 {
     background-color: gray;
+    border: 1px solid gray;
+    border-radius: 4px;
     color: white;
     padding: 16px 0px 16px 16px;
     margin-bottom: 8px;
