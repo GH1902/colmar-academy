@@ -7,7 +7,8 @@
     Medium Green = #5B969B
     Heavy Green = #2C757C */
 
-/* Font = 'Open Sans' https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700 */
+/* Font = 'Open Sans' https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700
+   Header Font = 'Cabin Sketch' https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700 */
 
 /* Universal Styles */
 
@@ -38,10 +39,10 @@ section {
 
 h1  {
   text-transform: uppercase;
+  font-family: 'Cabin Sketch', cursive;
   font-weight: 700;
-  color: #000;
-  font-size: 40px;
-  font-size: 2.5rem;
+  color: #2C757C;
+  font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -49,32 +50,27 @@ h1  {
 h2 {
   font-weight: 400;
   color: #000;
-  font-size: 22.4px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 40px;
 }
 
 h5 {
+  font-family: 'Cabin Sketch', cursive;
   font-weight: 700;
-  color: #000;
-  font-size: 32px;
-  font-size: 2rem;
+  color: #2C757C;
+  font-size: 2.75rem;
 }
 
 h6 {
   font-weight: 400;
-  color: #000;
-  font-size: 20px;
+  color: #2C757C;
   font-size: 1.25rem;
-  margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
 p {
-  font-size: 14.4px;
   font-size: 0.9rem;
-  line-height: 20px;
   line-height: 1.25rem;
   color: #000;
 }
@@ -118,13 +114,11 @@ header {
 
 #colmar {
   font-weight: 700;
-  font-size: 19.2px;
   font-size: 1.2rem;
   color: black;
 }
 
 #academy {
-  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 300;
   color: #2C757C;
@@ -145,7 +139,6 @@ nav ul {
 
 ul li a {
   margin-left: 16px;
-  font-size: 16px;
   font-size: 1rem;
   text-decoration: none;
   color: #2C757C;
@@ -154,6 +147,10 @@ ul li a {
 }
 
 ul li a:hover {
+  color: #DEEDEE;
+}
+
+ul li a:active {
   color: #DEEDEE;
 }
 
@@ -220,11 +217,8 @@ ul li a:hover {
   margin-right: 16px;
   text-align: center;
   text-decoration: none;
-  padding-top: 16px;
   padding-top: 1rem;
-  padding-bottom: 16px;
   padding-bottom: 1rem;
-  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 700;
   color: #FEFEFE;
@@ -233,6 +227,11 @@ ul li a:hover {
 }
 
 .jumbotron-content a:hover {
+  background-color: #DEEDEE;
+  color: #5B969B;
+}
+
+.jumbotron-content a:active {
   background-color: #DEEDEE;
   color: #5B969B;
 }
@@ -246,7 +245,7 @@ ul li a:hover {
   }
 
   .jumbotron-content h1 {
-    font-size: 2rem;
+    font-size: 2.75rem;
     line-height: 1.25;
     width: 90%;
   }
@@ -324,11 +323,11 @@ ul li a:hover {
 }
 
 .left h5 {
+  font-family: 'Cabin Sketch', cursive;
   margin-bottom: 24px;
 }
 
 .left span {
-  font-size: 14.4px;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 30px;
@@ -372,13 +371,11 @@ ul li a:hover {
 }
 
 .box-content p {
-  margin-bottom: 20px;
   margin-bottom: 1.25rem;
 }
 
 .box-content a {
   color: #FEFEFE;
-  font-size: 14.4px;
   font-size: 0.9rem;
   text-decoration: none;
   background-color: #5B969B;
@@ -390,6 +387,11 @@ ul li a:hover {
 }
 
 .box-content a:hover {
+  color: #5B969B;
+  background-color: #DEEDEE;
+}
+
+.box-content a:active {
   color: #5B969B;
   background-color: #DEEDEE;
 }
@@ -525,12 +527,9 @@ ul li a:hover {
 
 .course .box-content span {
   font-weight: 400;
-  font-size: 14.4px;
   font-size: 0.9rem;
-  color: #2C757C;
-  margin-top: 8px;
+  color: #5B969B;
   margin-top: 0.5rem;
-  margin-bottom: 12px;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
@@ -592,17 +591,29 @@ ul li a:hover {
     margin-bottom: 32px;
   }
 
+  .courses-mobile a {
+    text-decoration: none;
+  }
+
   .courses-mobile h6 {
     background-color: #5B969B;
     border: 1px solid #5B969B;
     border-radius: 4px;
     color: #FEFEFE;
-    padding: 16px 0px 16px 16px;
+    padding: 16px 16px 16px 16px;
     margin-bottom: 8px;
+    -webkit-transition: all 0.4s linear 0s;
+    transition: all 0.4s linear 0s;
   }
 
-  .courses-mobile a {
-    text-decoration: none;
+  .courses-mobile h6:hover {
+    background-color: #DEEDEE;
+    color: #5B969B;
+  }
+
+  .courses-mobile h6:active {
+    background-color: #DEEDEE;
+    color: #5B969B;
   }
 }
 
@@ -682,13 +693,11 @@ footer {
 
 footer span {
   margin-left: 24px;
-  font-size: 12px;
   font-size: 0.75rem;
   color: #2C757C;
 }
 
 footer nav ul li a {
-  font-size: 12px;
   font-size: 0.75rem;
   color: #2C757C;
 }
