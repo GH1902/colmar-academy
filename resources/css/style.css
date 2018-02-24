@@ -18,6 +18,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #FEFEFE;
 }
 
 section {
@@ -80,7 +81,7 @@ header {
   position: fixed;
   z-index: 100;
   align-items: center;
-  background-color: white;
+  background-color: #FEFEFE;
   border-bottom: 1px solid #DEEDEE;
 }
 
@@ -125,7 +126,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #5B969B;
+  color: #DEEDEE;
 }
 
 .mobile-nav {
@@ -183,7 +184,7 @@ ul li a:hover {
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #FEFEFE;
   transition: all 0.3s linear 0ms;
 }
 
@@ -310,7 +311,7 @@ ul li a:hover {
 }
 
 .box-content a {
-  color: white;
+  color: #FEFEFE;
   font-size: 0.9rem;
   text-decoration: none;
   background-color: #5B969B;
@@ -402,7 +403,7 @@ ul li a:hover {
 
 .course {
   width: 260px;
-  background-color: white;
+  background-color: #FEFEFE;
   margin-right: 32px;
   margin-bottom: 16px;
   transition: transform 0.25s ease-out 0s;
@@ -489,9 +490,13 @@ ul li a:hover {
     background-color: #5B969B;
     border: 1px solid #5B969B;
     border-radius: 4px;
-    color: white;
+    color: #FEFEFE;
     padding: 16px 0px 16px 16px;
     margin-bottom: 8px;
+  }
+
+  .courses-mobile a {
+    text-decoration: none;
   }
 }
 
