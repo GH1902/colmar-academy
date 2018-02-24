@@ -9,7 +9,6 @@
 
 /* Font = 'Open Sans' https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700 */
 
-
 /* Universal Styles */
 
 html {
@@ -23,6 +22,8 @@ body {
 
 section {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -39,6 +40,7 @@ h1  {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  font-size: 40px;
   font-size: 2.5rem;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -47,6 +49,7 @@ h1  {
 h2 {
   font-weight: 400;
   color: #000;
+  font-size: 22.4px;
   font-size: 1.4rem;
   line-height: 1.5;
   margin-bottom: 40px;
@@ -55,18 +58,23 @@ h2 {
 h5 {
   font-weight: 700;
   color: #000;
+  font-size: 32px;
   font-size: 2rem;
 }
 
 h6 {
   font-weight: 400;
   color: #000;
+  font-size: 20px;
   font-size: 1.25rem;
+  margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
 p {
+  font-size: 14.4px;
   font-size: 0.9rem;
+  line-height: 20px;
   line-height: 1.25rem;
   color: #000;
 }
@@ -76,18 +84,28 @@ p {
 header {
   height: 64px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   z-index: 100;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FEFEFE;
   border-bottom: 1px solid #DEEDEE;
 }
 
 .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 24px;
 }
 
@@ -100,28 +118,38 @@ header {
 
 #colmar {
   font-weight: 700;
+  font-size: 19.2px;
   font-size: 1.2rem;
   color: black;
 }
 
 #academy {
+  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 300;
   color: #2C757C;
 }
 
 nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 24px;
 }
 
 ul li a {
   margin-left: 16px;
+  font-size: 16px;
   font-size: 1rem;
   text-decoration: none;
   color: #2C757C;
+  -webkit-transition: color 0.3s linear 0s;
   transition: color 0.3s linear 0s;
 }
 
@@ -141,8 +169,11 @@ ul li a:hover {
   }
 
   nav.mobile-nav, nav.mobile-nav ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
   }
 }
@@ -164,10 +195,19 @@ ul li a:hover {
 }
 
 .jumbotron-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   max-width: 400px;
   padding: 32px;
 }
@@ -180,11 +220,15 @@ ul li a:hover {
   margin-right: 16px;
   text-align: center;
   text-decoration: none;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
+  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 700;
   color: #FEFEFE;
+  -webkit-transition: all 0.3s linear 0ms;
   transition: all 0.3s linear 0ms;
 }
 
@@ -223,9 +267,15 @@ ul li a:hover {
 
 @media only screen and (max-width: 768px) {
   .jumbotron {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
 
   .jumbotron-img {
@@ -257,8 +307,13 @@ ul li a:hover {
 
 .left {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 32px 24px 32px 24px;
 }
 
@@ -273,6 +328,7 @@ ul li a:hover {
 }
 
 .left span {
+  font-size: 14.4px;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 30px;
@@ -280,8 +336,13 @@ ul li a:hover {
 }
 
 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-left: 1px solid #DEEDEE;
   padding-bottom: 32px;
   width: 40%;
@@ -292,8 +353,12 @@ ul li a:hover {
 }
 
 .box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -307,17 +372,20 @@ ul li a:hover {
 }
 
 .box-content p {
+  margin-bottom: 20px;
   margin-bottom: 1.25rem;
 }
 
 .box-content a {
   color: #FEFEFE;
+  font-size: 14.4px;
   font-size: 0.9rem;
   text-decoration: none;
   background-color: #5B969B;
   padding: 8px 8px 8px 8px;
   border: 1px solid #5B969B;
   border-radius: 4px;
+  -webkit-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
 
@@ -347,7 +415,9 @@ ul li a:hover {
 
 @media only screen and (max-width: 768px) {
   .practice {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .left {
@@ -359,13 +429,23 @@ ul li a:hover {
   }
 
   .right-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 16px;
   }
 
@@ -395,9 +475,14 @@ ul li a:hover {
 }
 
 .course-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 32px 64px 32px 64px;
 }
 
@@ -406,13 +491,17 @@ ul li a:hover {
   background-color: #FEFEFE;
   margin-right: 32px;
   margin-bottom: 16px;
+  -webkit-transition: -webkit-transform 0.25s ease-out 0s;
+  transition: -webkit-transform 0.25s ease-out 0s;
   transition: transform 0.25s ease-out 0s;
+  transition: transform 0.25s ease-out 0s, -webkit-transform 0.25s ease-out 0s;
   border: 1px solid #DEEDEE;
   border-radius: 8px;
 }
 
 .course:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 
 .course img {
@@ -424,16 +513,24 @@ ul li a:hover {
 .course .box-content {
   width: 225px;
   height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 16px;
 }
 
 .course .box-content span {
   font-weight: 400;
+  font-size: 14.4px;
   font-size: 0.9rem;
   color: #2C757C;
+  margin-top: 8px;
   margin-top: 0.5rem;
+  margin-bottom: 12px;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
@@ -464,9 +561,16 @@ ul li a:hover {
 
 @media only screen and (max-width: 768px) {
   .start-learning {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0px;
   }
 
@@ -480,7 +584,9 @@ ul li a:hover {
 
   .courses-mobile {
     display: block;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 90%;
     max-width: 480px;
     margin-bottom: 32px;
@@ -514,6 +620,8 @@ ul li a:hover {
 }
 
 .thesis-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -562,19 +670,25 @@ video {
 footer {
   height: 64px;
   width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 16px;
   border-top: 1px solid #DEEDEE;
 }
 
 footer span {
   margin-left: 24px;
+  font-size: 12px;
   font-size: 0.75rem;
   color: #2C757C;
 }
 
 footer nav ul li a {
+  font-size: 12px;
   font-size: 0.75rem;
   color: #2C757C;
 }
