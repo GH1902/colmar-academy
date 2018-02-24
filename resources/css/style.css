@@ -1,14 +1,14 @@
 /* Garry Hope Colmar Academy Project */
 
+/* Colour Palette = http://paletton.com/#uid=23k0u0k6+KE02+H2aVEdsw3kNpy
+    White = #FEFEFE
+    Base Green = #A0C8CC
+    Light Green = #DEEDEE (get out of my laboratory)
+    Medium Green = #5B969B
+    Heavy Green = #2C757C */
 
-/* Colour Palette = http://paletton.com/#uid=23k0u0k6+KE02+H2aVEdsw3kNpy*/
+/* Font = 'Open Sans' https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700 */
 
-/* Styles:
-
-Border solid 1px
-Border-radius 4px
-
-*/
 
 /* Universal Styles */
 
@@ -31,7 +31,7 @@ section {
 }
 
 #header-offset section:nth-child(odd) {
-  background-color: lightgray;
+  background-color: #DEEDEE;
 }
 
 h1  {
@@ -81,7 +81,7 @@ header {
   z-index: 100;
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #DEEDEE;
 }
 
 .logo {
@@ -106,7 +106,7 @@ header {
 #academy {
   font-size: 1.2rem;
   font-weight: 300;
-  color: lightgray;
+  color: #2C757C;
 }
 
 nav ul {
@@ -120,12 +120,12 @@ ul li a {
   margin-left: 16px;
   font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: #2C757C;
   transition: color 0.3s linear 0s;
 }
 
 ul li a:hover {
-  color: lightgray;
+  color: #5B969B;
 }
 
 .mobile-nav {
@@ -172,8 +172,8 @@ ul li a:hover {
 }
 
 .jumbotron-content a {
-  background-color: gray;
-  border: 1px solid gray;
+  background-color: #5B969B;
+  border: 1px solid #5B969B;
   border-radius: 4px;
   width: 100%;
   margin-right: 16px;
@@ -188,8 +188,8 @@ ul li a:hover {
 }
 
 .jumbotron-content a:hover {
-  background-color: lightgray;
-  color: gray;
+  background-color: #DEEDEE;
+  color: #5B969B;
 }
 
 /* Start Here Section - TABLET */
@@ -281,13 +281,13 @@ ul li a:hover {
 .right {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #DEEDEE;
   padding-bottom: 32px;
   width: 40%;
 }
 
 .right div:nth-child(3n+0) {
-  background-color: lightgray;
+  background-color: #DEEDEE;
 }
 
 .box {
@@ -313,16 +313,16 @@ ul li a:hover {
   color: white;
   font-size: 0.9rem;
   text-decoration: none;
-  background-color: grey;
+  background-color: #5B969B;
   padding: 8px 8px 8px 8px;
-  border: 1px solid grey;
+  border: 1px solid #5B969B;
   border-radius: 4px;
   transition: all 0.4s linear 0s;
 }
 
 .box-content a:hover {
-  color: grey;
-  background-color: lightgrey;
+  color: #5B969B;
+  background-color: #DEEDEE;
 }
 
 .right-mobile {
@@ -384,7 +384,7 @@ ul li a:hover {
 
 .start-learning {
   display: block;
-  background-color: lightgray;
+  background-color: #DEEDEE;
 }
 
 .start-learning h5 {
@@ -406,7 +406,7 @@ ul li a:hover {
   margin-right: 32px;
   margin-bottom: 16px;
   transition: transform 0.25s ease-out 0s;
-  border: 1px solid lightgray;
+  border: 1px solid #DEEDEE;
   border-radius: 8px;
 }
 
@@ -429,9 +429,9 @@ ul li a:hover {
 }
 
 .course .box-content span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9rem;
-  color: gray;
+  color: #2C757C;
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
@@ -486,8 +486,8 @@ ul li a:hover {
   }
 
   .courses-mobile h6 {
-    background-color: gray;
-    border: 1px solid gray;
+    background-color: #5B969B;
+    border: 1px solid #5B969B;
     border-radius: 4px;
     color: white;
     padding: 16px 0px 16px 16px;
@@ -518,7 +518,7 @@ ul li a:hover {
 
 video {
   margin-bottom: 24px;
-  border: 2px solid lightgray;
+  border: 2px solid #DEEDEE;
 }
 
 #thesis {
@@ -527,7 +527,7 @@ video {
 }
 
 #thesis div:first-child{
-  background-color: lightgray;
+  background-color: #DEEDEE;
   padding-top: 0px;
 }
 
@@ -560,18 +560,18 @@ footer {
   display: inline-flex;
   justify-content: space-between;
   padding-top: 16px;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #DEEDEE;
 }
 
 footer span {
   margin-left: 24px;
   font-size: 0.75rem;
-  color: gray;
+  color: #2C757C;
 }
 
 footer nav ul li a {
   font-size: 0.75rem;
-  color: gray;
+  color: #2C757C;
 }
 
 /* Footer Section Section - MOBILE */
@@ -582,7 +582,7 @@ footer nav ul li a {
   }
 
   footer {
-    border-top: 0px solid lightgray;
+    border-top: 0px solid #DEEDEE;
     height: auto;
     margin-top: 16px;
     margin-bottom: 16px;
